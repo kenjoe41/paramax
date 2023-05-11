@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/url"
 	"os"
+	"path/filepath"
 	"strings"
 	"sync"
 
@@ -268,6 +269,14 @@ func extractDomain(input string) string {
 }
 
 func writeURLsToFile(urls []string, outputFile string) error {
+	dir := filepath.Dir(outputFile)
+	if dir != "" {
+		err := os.MkdirAll(dir, 0755)
+		if err != nil {
+			return err
+		}
+	}
+
 	file, err := os.Create(outputFile)
 	if err != nil {
 		return err
