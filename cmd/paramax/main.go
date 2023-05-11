@@ -30,7 +30,7 @@ func main() {
 		Use:   "paramax",
 		Short: "A program for analyzing URL parameters",
 		Run: func(cmd *cobra.Command, args []string) {
-			runPassiveMode()
+			runPassiveMode(cmd)
 		},
 	}
 
@@ -38,7 +38,7 @@ func main() {
 		Use:   "passive",
 		Short: "Run the program in passive mode",
 		Run: func(cmd *cobra.Command, args []string) {
-			runPassiveMode()
+			runPassiveMode(cmd)
 		},
 	}
 
@@ -92,10 +92,11 @@ Use "paramax [command] --help" for more information about a command.`)
 	}
 }
 
-func runPassiveMode() {
+func runPassiveMode(cmd *cobra.Command) {
 	domain := extractDomain(domainFlag)
 	if domain == "" {
 		fmt.Fprintf(os.Stderr, "Domain format error: %s, please enter a valid domain.\n", domain)
+		cmd.Usage()
 		os.Exit(1)
 	}
 
