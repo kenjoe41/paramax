@@ -15,27 +15,30 @@ Paramax is a command-line program for analyzing URL parameters. It provides both
 ## Installation
 
 ### With GIT Install
+
     ```shell
-    go install github.com/kenjoe41/paramax/...@latest
+        go install github.com/kenjoe41/paramax/...@latest
     ```
 ### Manually
 1. Clone the Paramax repository:
 
-   ```shell
-   git clone https://github.com/kenjoe41/paramax.git
-   ```
+    ```shell
+    git clone https://github.com/kenjoe41/paramax.git
+    ```
 2. Navigate to the project directory:
 
     ```shell
     cd paramax
     ```
 3. Build the binary using the Go compiler:
+
     ```shell
     go build .
     ```
 
 ## Usage
 Passive mode (default):
+
     ```shell
     paramax --domain example.com
     ```
