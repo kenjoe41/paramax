@@ -64,4 +64,4 @@ I started out and rewrote [ParamSpider](https://github.com/devanshbatham/ParamSp
 Contributions are welcome! If you find any bugs or have suggestions for improvements, please submit an issue or create a pull request.
 
 ## License
-This project is licensed under the [MIT License](https://www.mit.edu/~amini/LICENSE.md).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
