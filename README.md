@@ -42,21 +42,21 @@ Direct from github with go:
 ## Usage
 Passive mode (default):
 
-    ```
+
     paramax --domain example.com
-    ```
+
 
 Active mode:
 
-    ```
+
     paramax active --domain example.com
-    ```
+
 
 For more options and flags, refer to the command-line help:
 
-    ```
+
     paramax --help
-    ```
+
 
 ## Credit
 I started out and rewrote [ParamSpider](https://github.com/devanshbatham/ParamSpider) by [0xAsm0d3us](https://twitter.com/0xAsm0d3us), into Golang. All credit to him.
