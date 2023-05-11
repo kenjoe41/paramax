@@ -26,11 +26,13 @@ Direct from github with go:
     ```shell
     git clone https://github.com/kenjoe41/paramax.git
     ```
+
 2. Navigate to the project directory:
 
     ```shell
     cd paramax
     ```
+
 3. Build the binary using the Go compiler:
 
     ```shell
@@ -43,14 +45,19 @@ Passive mode (default):
     ```shell
     paramax --domain example.com
     ```
+
 Active mode:
+
     ```shell
     paramax active --domain example.com
     ```
+
 For more options and flags, refer to the command-line help:
+
     ```shell
     paramax --help
     ```
+
 ## Credit
 I started out and rewrote [ParamSpider](https://github.com/devanshbatham/ParamSpider) by [0xAsm0d3us](https://twitter.com/0xAsm0d3us), into Golang. All credit to him.
 ## Contributing
