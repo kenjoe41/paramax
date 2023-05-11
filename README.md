@@ -17,9 +17,9 @@ Paramax is a command-line program for analyzing URL parameters. It provides both
 ### With GIT Install
 Direct from github with go:
 
-    ```
+    
     go install github.com/kenjoe41/paramax/...@latest
-    ```
+    
 ### Manually
 1. Clone the Paramax repository:
 
@@ -35,7 +35,7 @@ Direct from github with go:
 
 3. Build the binary using the Go compiler:
 
-    ```
+    ```shell
     go build .
     ```
 
