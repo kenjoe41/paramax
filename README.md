@@ -17,7 +17,7 @@ Paramax is a command-line program for analyzing URL parameters. It provides both
 ### With GIT Install
 Direct from github with go:
 
-    ```shell
+    ```
     go install github.com/kenjoe41/paramax/...@latest
     ```
 ### Manually
@@ -35,26 +35,26 @@ Direct from github with go:
 
 3. Build the binary using the Go compiler:
 
-    ```shell
+    ```
     go build .
     ```
 
 ## Usage
 Passive mode (default):
 
-    ```shell
+    ```
     paramax --domain example.com
     ```
 
 Active mode:
 
-    ```shell
+    ```
     paramax active --domain example.com
     ```
 
 For more options and flags, refer to the command-line help:
 
-    ```shell
+    ```
     paramax --help
     ```
 
